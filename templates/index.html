@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Python Task</title>
+        <link rel="stylesheet" href="{% static "style.css" %}">
+    </head>
+    <body>
+        <body>
+            <form action="{% url 'ind' %}" method="POST">
+            {% csrf_token %}
+            <div>
+                <label class="div2" for="name">Name</label> <input id="name" name="Name" type="text">
+            </div><br>
+            <div>
+                <label class="div2" for="date">DOB </label> <input name="DOB" type="date" id="date" > 
+            </div><br>
+            <div>
+                <label class="div2">Email id</label> <input name="Emailid" type="email">
+            </div><br>
+            <div>
+                <label class="div2">Phone number</label> <input name="phone" type="tel">
+            </div><br>
+            <div>
+                <label for="gender" id="abc" class="div2"> Gender </label> 
+                <input type="radio" name="gender" value="male">Male</label>
+                <input type="radio" name="gender" value="female">Female</label>
+    
+            </div><br>
+            <div>
+                <label class="div2">Flat number</label> <input name="phone" type="text">
+            </div><br>
+            <div>
+                <label class="div2">Street</label> <input name="phone" type="text">
+            </div><br>
+            <div>
+                <label for="country" class="div2">Country</label>
+                <select name="country" id="country">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                </select>
+            </div><br>
+        <div class="div2">
+            Upload Photo
+        </div>
+        
+        <div class="div1" id="display_image">
+        </div><br>
+        <input type="file" name="" id="image_input" accept="image/*">
+        <label for="image_input" class="button_cls">
+            Browse from PC
+        </label><br>
+        <br>
+        <div class="sub">
+            <button type="submit"> Submit </button>
+        </div><br>
+        </form>
+        </body>
+    </body>
+</html>

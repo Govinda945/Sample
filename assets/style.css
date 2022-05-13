@@ -1,0 +1,16 @@
+body{
+    margin-left: 200px;
+    margin-top: 80px;
+    font-style: normal;
+    font-size: large;
+}
+
+label{
+    width:150px;
+    display:inline-block;
+    text-align: right;
+}
+
+div.sub{
+    margin-left: 150px;
+}
