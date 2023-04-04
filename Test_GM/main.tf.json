@@ -1,0 +1,44 @@
+[
+    {
+        "provider": {
+            "aws": {
+                "region": "ap-south-1"
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_acm_certificate": {
+                "asd": {
+                    "domain_name": "dsa"
+                }
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_api_gateway_account": {
+                "api01": {
+                    "cloudwatch_role_arn": "ddcs"
+                }
+            }
+        }
+    },
+    {
+        "output": {
+            "api01": {
+                "value": "[${aws_api_gateway_account.api01.throttle_settings},${aws_api_gateway_account.api01.burst_limit}]"
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_amplify_webhook": {
+                "amp01": {
+                    "app_id": "sdada",
+                    "branch_name": "dfsdf"
+                }
+            }
+        }
+    }
+]
