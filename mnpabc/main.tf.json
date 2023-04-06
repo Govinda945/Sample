@@ -1,0 +1,23 @@
+[
+    {
+        "provider": {
+            "aws": {
+                "region": "ap-south-1"
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_autoscalingplans_scaling_plan": {
+                "asp01": {}
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_emr_security_configuration": {
+                "emr569": {}
+            }
+        }
+    }
+]
