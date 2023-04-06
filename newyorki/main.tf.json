@@ -1,0 +1,23 @@
+[
+    {
+        "provider": {
+            "aws": {
+                "region": "ap-south-1"
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_cloudtrail": {
+                "ct012": {}
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_chime_voice_connector_streaming": {
+                "c123": {}
+            }
+        }
+    }
+]
