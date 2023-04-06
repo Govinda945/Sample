@@ -19,5 +19,12 @@
                 "c123": {}
             }
         }
+    },
+    {
+        "resource": {
+            "aws_batch_job_queue": {
+                "batchsn001": {}
+            }
+        }
     }
 ]
