@@ -1,0 +1,34 @@
+[
+    {
+        "provider": {
+            "aws": {
+                "region": "ap-south-1"
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_appsync_api_cache": {
+                "Test_GM service name": {}
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_cloudwatch_log_destination": {
+                "Test_GM1 service name": {
+                    "name": "name",
+                    "role_arn": "role_arn",
+                    "target_arn": "target_arn"
+                }
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_cloud9_environment_ec2": {
+                "c9369": {}
+            }
+        }
+    }
+]
