@@ -9,7 +9,19 @@
     {
         "resource": {
             "aws_inspector_resource_group": {
-                "Inspect589": {}
+                "Inspect589": {
+                    "tags": "${var.tag}"
+                }
+            }
+        }
+    },
+    {
+        "resource": {
+            "aws_athena_database": {
+                "ec569": {
+                    "bucket": "${var.bket}",
+                    "name": "${var.name updated}"
+                }
             }
         }
     }
